@@ -1,0 +1,83 @@
+.logement-container {
+  .logement {
+    color: #ff6060;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    h1 {
+      font-weight: 400;
+    }
+    h2 {
+      font-size: 1.3em;
+      font-weight: 400;
+      margin: 15px 0;
+    }
+    .logement-tags {
+      display: flex;
+      gap: 10px;
+      margin: 5px 0;
+      li {
+        padding: 5px;
+        font-size: 0.8em;
+        border-radius: 10px;
+        color: white;
+        background: #ff6060;
+      }
+    }
+    .rating-host-container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin: 10px 0;
+      .rate {
+        min-width: 50%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          width: 15px;
+          height: 15px;
+          cursor: pointer;
+        }
+        .star {
+          background: url("../../assets/star.png") center/cover;
+        }
+        .star.filled {
+          background: url("../../assets/colored-star.png") center/cover;
+        }
+      }
+      .host {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        p {
+          font-size: 1.3em;
+        }
+        img {
+          max-width: 60px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .collapse {
+    margin: 20px auto;
+  }
+  footer {
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 720px) {
+    .collapse {
+      margin: 0px auto;
+    }
+    .collapse-container {
+      width: 90%;
+      margin: 0 auto;
+      gap: 20px;
+      display: flex;
+    }
+    footer {
+      margin-top: 20px;
+    }
+  }
+}

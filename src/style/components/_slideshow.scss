@@ -1,0 +1,40 @@
+.slideshow {
+  min-height: 255px;
+  width: 90%;
+  margin: 20px auto;
+  background-position: center;
+  border-radius: 10px;
+  background-size: cover;
+  position: relative;
+  #prev {
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 30px;
+    background: url("../../assets/left-arrow.png") center/cover;
+  }
+  #next {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 30px;
+    background: url("../../assets/right-arrow.png") center/cover;
+  }
+  #state {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    opacity: 0;
+  }
+  @media screen and (min-width: 720px) {
+    #state {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.banner {
+  position: relative;
+  background-blend-mode: darken;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+  min-height: 150px;
+  h1 {
+    position: absolute;
+    left: 25px;
+    top: 45px;
+    text-align-last: left;
+    font-size: 1.5em;
+    font-weight: 200;
+    color: white;
+  }
+}

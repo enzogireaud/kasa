@@ -1,0 +1,19 @@
+.notFound-content {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #ff6060;
+  h2 {
+    font-size: 5em;
+  }
+  a {
+    color: #ff6060;
+    text-decoration: underline;
+    transition: 0.5s ease;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

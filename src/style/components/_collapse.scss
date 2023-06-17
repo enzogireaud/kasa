@@ -1,0 +1,71 @@
+.collapse {
+  width: 90%;
+  margin: 5px auto;
+  color: white;
+  font-size: 0.8em;
+  text-align-last: left;
+  position: relative;
+
+  h3 {
+    background: #ff6060;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  .collapse-content {
+    background: #f6f6f6;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease, background-color 0.2s ease;
+  }
+
+  .open {
+    max-height: 500px;
+    // transition: max-height 0.3s ease 0.3s, background-color 0.3s ease 0.3s;
+
+    p,
+    ul li {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.2s ease 0.2s, transform 0.2s ease 0.2s;
+    }
+  }
+
+  p {
+    position: relative;
+    color: #ff6060;
+    text-align: left;
+    padding: 15px;
+    font-size: 1em;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  ul li {
+    position: relative;
+    color: #ff6060;
+    text-align: left;
+    padding: 5px;
+    font-size: 1em;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  span {
+    color: white;
+    position: absolute;
+    top: -4px;
+    right: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  &.open span {
+    transform: rotate(-90deg);
+  }
+
+  &.open .collapse-content {
+    max-height: 500px;
+  }
+}
