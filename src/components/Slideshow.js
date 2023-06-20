@@ -5,15 +5,11 @@ const Slideshow = ({ logement }) => {
   const images = logement.pictures;
 
   const handleClickPrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+    setCurrentIndex((index) => (index === 0 ? images.length - 1 : index - 1));
   };
 
   const handleClickNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
+    setCurrentIndex((index) => (index === images.length - 1 ? 0 : index + 1));
   };
   if (images.length === 1) {
     return (

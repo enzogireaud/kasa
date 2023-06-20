@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const Collapse = ({ title, description, equipements }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
